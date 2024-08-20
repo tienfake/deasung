@@ -1,0 +1,356 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  z-index:0;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../path-to-your-fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('../path-to-your-fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: 400;
+  font-weight: 500;
+  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .container {
+    margin-left:8px;
+    margin-right:8px;
+  }
+}
+.avt img{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+@media (max-width: 767px) {
+  .avt img{
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+}
+.logo img{
+  width: auto;
+  height: auto;
+}
+.search input {
+  outline: none;
+  border: none;
+}
+.gio-hang img {
+  width: 20px;
+  height: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-dropdown {
+  display: none; 
+}
+
+.search-container:hover .search-dropdown {
+  display: block; 
+}
+
+.search-container:hover .icon-search {
+  color: #EB484E; 
+}
+
+//header menu
+.hidden {
+  display: none;
+}
+
+.menu-bar {
+  width: 200px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+  padding: 1.219rem;
+}
+.menu ul li {
+    margin: 0 35px;
+    font-size:16px;
+    Line height:21px;
+    text-transform: uppercase; 
+    font-weight: 600;
+}
+.menu ul li:hover {
+    background-color: white;
+    color:black;
+    transition:0.5s;
+}
+.bgMenu{
+    background:#EB484E;
+    margin:0;
+}
+@media (max-width: 1535px) {
+  .menu ul li  {
+    font-size:14px;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 1280px) {
+  .menu ul li  {
+    font-size:14px;
+    margin: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .menu ul li  {
+    font-size:12px;
+    margin:0px;
+    padding: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .menu ul {
+    display: none; 
+  }
+/* 
+  .menu-mobile {
+    display: flex;
+  } */
+}
+
+//mobile menu
+.mobile-menu {
+  transform: translateX(-100%);
+  transition: transform 0.8s ease-in-out; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%; 
+  height: 100%;
+  background: #EB484E;
+  padding: 20px;
+  z-index: 50;
+  color: white;
+  text-transform: uppercase;
+}
+
+.mobile-menu.show {
+  transform: translateX(0);
+}
+
+.menu-mobile i, .close-menu i {
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  .mobile-menu {
+      width: 50%; 
+  }
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 20px; 
+  font-size: 18px; 
+  font-weight: 600; 
+}
+
+@media (max-width: 520px) {
+  .mobile-menu ul li {
+      font-size: 14px; 
+  }
+}
+
+.mobile-menu ul li ul {
+  padding-left: 20px; 
+  margin-top: 10px; 
+  font-size: 16px; 
+  font-weight: 400; 
+  display: none; 
+}
+
+.mobile-menu ul li:hover > ul {
+  display: block; 
+}
+
+///
+.back-to-top img{
+    width: 50px;
+    height: 50px;
+}
+.back-to-top{
+    position:fixed;
+    left:3%;
+    bottom:5%;
+}
+.button-cate:hover{
+    background:white;
+    transition:0.8s;
+    color:black;
+}
+
+.footer-img img{
+    width:9%;
+    height:100%;
+    margin-left:5%;
+}
+
+//dropmenu
+.header-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 35px;
+}
+
+.header-menu ul li {
+  position: relative;
+}
+
+.header-menu ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #EB484E; 
+  padding: 10px 0;
+  list-style-type: none;
+  z-index:1000;
+}
+
+.header-menu ul li:hover ul {
+  display: block; 
+}
+
+.header-menu ul li ul li {
+  /* padding: 5px 20px; */
+  white-space: nowrap; 
+}
+
+.header-menu ul li a ul li {
+  color: white;
+  text-decoration: none;
+}
+
+.header-menu ul li ul li:hover {
+background:none;
+color:white;
+}
+
+.toTop{
+  position:fixed;
+  right:3%;
+  bottom:5%;
+} 
+.toTop:hover{
+  background:black;
+  transition:0.8s;
+}
+.hover-product-pre-next:hover{
+  background:black;
+  color:white;
+  transition:0.8s;
+}
+.lien-he a p:hover{
+  color:#EB484E;
+  transition:0.4s;
+}
+.gio-hang:hover{
+  background:#EB484E;
+  transition:0.4s;
+  color:white;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  width: 13.5rem;
+  background-color:#454545;
+  z-index:1000;
+}
+
+#dropdown ul {
+  padding: 0.25rem 0;
+}
+
+#dropdown ul li {
+  list-style-type: none;
+
+}
+
+#dropdown ul li a {
+  display: block;
+  color: white; 
+  text-decoration: none;
+  font-size:14px;
+  padding:0.75rem 0.625rem 0.75rem 0.625rem ;
+}
+
+#dropdown ul li a:hover {
+  background-color: #656565;
+  transition:0.5s;
+}
+.mxh img{
+  width:36px;
+  height:36px;
+}
+.iconPT img{
+  width:31px;
+  height:20px;
+}
+
+.slidebanner {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.slidebanner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-new a p:hover{
+  color:#EB484E;
+  transition:0.4s;
+}
+
+.img-new {
+  overflow: hidden;
+}
+
+.img-new img {
+  display: block; /* Loại bỏ khoảng cách dưới hình ảnh */
+  width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của khối chứa */
+  height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị biến dạng */
+  transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển tiếp khi phóng to */
+}
+
+.img-new:hover img {
+  transform: scale(1.1); /* Phóng to hình ảnh 10% khi hover */
+}
